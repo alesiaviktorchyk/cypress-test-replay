@@ -1,0 +1,24 @@
+{
+  "name": "cypress-test-replay",
+  "version": "1.0.0",
+  "description": "Repo to test Cypress test replay.",
+  "main": "index.js",
+  "scripts": {
+    "cy:verify": "cypress verify",
+    "test": "cypress open",
+    "test:ci": "cypress run --browser chrome --record --parallel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alesiaviktorchyk/cypress-test-replay.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alesiaviktorchyk/cypress-test-replay/issues"
+  },
+  "homepage": "https://github.com/alesiaviktorchyk/cypress-test-replay#readme",
+  "dependencies": {
+    "cypress": "^13.6.0"
+  }
+}
