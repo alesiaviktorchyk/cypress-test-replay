@@ -17,7 +17,7 @@ module.exports = defineConfig({
     },
   },
   projectId: "6xx3qp",
-  viewportWidth: 1920,
-  viewportHeight: 1080,
+  viewportWidth: 1000,
+  viewportHeight: 660,
   video: true,
 });
