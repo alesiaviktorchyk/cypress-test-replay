@@ -101,11 +101,11 @@ describe('example to-do app', () => {
       cy.get('.todo-list li')
         .should('have.length', 1)
         .first()
-        .should('have.text', 'Walk the dog')
+        .should('have.text', 'boo')
 
       // For good measure, let's also assert that the task we checked off
       // does not exist on the page.
-      cy.contains('Pay electric bill').should('not.exist')
+      cy.contains('Pay electric bill').should('exist')
     })
 
     it('can filter for completed tasks', () => {
@@ -134,7 +134,7 @@ describe('example to-do app', () => {
       // in the list and our element does not exist
       cy.get('.todo-list li')
         .should('have.length', 1)
-        .should('not.have.text', 'Pay electric bill')
+        .should('have.text', 'Pay electric bill')
 
       // Finally, make sure that the clear button no longer exists.
       cy.contains('Clear completed').should('not.exist')
